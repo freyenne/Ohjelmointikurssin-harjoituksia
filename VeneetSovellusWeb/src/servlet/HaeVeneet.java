@@ -36,12 +36,12 @@ public class HaeVeneet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("HaeVeneet.doPost()");
 		String hakusana = request.getParameter("hakusana");
-		/*
+		
 		if(hakusana.isEmpty()){
 			response.sendRedirect("haeveneet.jsp?ilmo=Anna hakusana");
 			return;
 		}
-		*/
+		
 		Dao dao = new Dao();
 		ArrayList<Vene> veneet = dao.listaaKaikki(hakusana);
 		request.setAttribute("veneet", veneet);		
