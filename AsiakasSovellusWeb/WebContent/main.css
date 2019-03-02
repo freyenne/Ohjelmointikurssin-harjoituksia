@@ -1,0 +1,18 @@
+th{
+	background-color: grey;
+	color: white;
+	font-size: 18px;	
+}
+input[type="button"], input[type="submit"] { 
+	background-color: grey;
+    color: white;	    
+    cursor: pointer;
+	border-radius: 15px;
+	width: 200px;
+	height: 40px;
+	font-weight: bold;
+}
+table{
+	border-radius: 15px;
+	width: 400px;
+}
